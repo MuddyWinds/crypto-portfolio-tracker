@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BsThreeDotsVertical } from 'react-icons/bs';
+import { coins } from '../static/coins';
+import Coin from './Coin';
 
 function Portfolio() {
   return (
@@ -23,7 +25,12 @@ function Portfolio() {
                   </TableRow>
               </TableItem>
               <Divider />
-              <div></div>
+              <div>{coins.map(coin => (
+                  <div>
+                      <Coin coin={coin} />
+                      <Divider />
+                  </div>
+               ))}</div>
           </Table>
         </PortfolioTable>
       </Wrapper>
@@ -76,3 +83,4 @@ const Title = styled.div`
     font-size: 1.5rem;
     font-weight: 600;
 `
+
