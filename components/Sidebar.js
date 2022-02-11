@@ -16,7 +16,7 @@ function Sidebar() {
         <NavItemsContainer>
             {navItems.map((item, index) => (
                 <NavItem key={index} onClick={() => setActiveIcon(item.title)}>
-                    <NavIcon style={{ color: item.title == activeIcon && '#3773f5 '}}>{item.icon}</NavIcon>
+                    <NavIcon style={{color: item.title == activeIcon && '#3773f5 '}}>{item.icon}</NavIcon>
                     <NavTitle>{item.title}</NavTitle>
                 </NavItem>
             ))}
