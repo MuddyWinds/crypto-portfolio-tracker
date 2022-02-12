@@ -1,14 +1,25 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
 function Promos() {
   return (
     <Wrapper>
         <OfferCard>
             <Title>Yield earned</Title>
+            <Description>Earn up to 2.84% APY on your crypto</Description>
+            <Placeholder />
+            <Additional style={{ fontSize: '1.5rem' }}>
+                $0.000066 <span>2.84% APY</span>
+            </Additional>
         </OfferCard>
 
         <OfferCard>
             <Title>Learn and Earn</Title>
+            <Description>Earn up to 2.84% APY on your crypto</Description>
+            <Placeholder />
+            <Additional style={{ color: '#3773f5' }}>
+                Verify identity
+            </Additional>
         </OfferCard>
     </Wrapper>
   )
@@ -29,6 +40,12 @@ const OfferCard = styled.div`
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+`
+
+const Title = styled.div`
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
 `
 
 const Description = styled.div`
