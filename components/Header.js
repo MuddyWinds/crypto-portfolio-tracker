@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Header({ walletAddress, connectWallet }) {
+function Header({ walletAddress, sanityTokens, thirdWebTokens }) {
   return (
       <Wrapper>
         <Title>Assets</Title>

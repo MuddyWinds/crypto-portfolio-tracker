@@ -3,16 +3,17 @@ import Portfolio from './Portfolio';
 import Promos from './Promos';
 import styled from 'styled-components';
 
-function Main() {
+function Main({ thirdWebTokens, sanityTokens, walletAddress }) {
   return (
       <Wrapper>
-          <Portfolio/>
+          <Portfolio walletAddress={walletAddress} sanityTokens={sanityTokens} thirdWebTokens={thirdWebTokens}/>
           <Promos />
       </Wrapper>
   )
 }
 
 export default Main;
+
 
 const Wrapper = styled.div`
     display: flex;
